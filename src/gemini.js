@@ -2,7 +2,9 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
-let model;
+console.log("KEY:", apiKey); // Debug (remove later)
+
+let model = null;
 
 if (apiKey) {
   const genAI = new GoogleGenerativeAI(apiKey);
@@ -10,7 +12,7 @@ if (apiKey) {
     model: "gemini-1.5-flash",
   });
 } else {
-  console.warn("Gemini API key not found.");
+  console.error("Gemini API key is missing");
 }
 
 export { model };
