@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-medical-50: #f0f7ff;
+  --color-medical-100: #e0effe;
+  --color-medical-200: #bae0fd;
+  --color-medical-300: #7cc7fb;
+  --color-medical-400: #38a9f8;
+  --color-medical-500: #0e8ce4;
+  --color-medical-600: #026fc7;
+  --color-medical-700: #0358a1;
+  --color-medical-800: #074b85;
+  --color-medical-900: #0c406f;
+}
+
+@layer base {
+  body {
+    @apply bg-medical-50 text-slate-900 font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.medical-gradient {
+  background: linear-gradient(135deg, var(--color-medical-500) 0%, var(--color-medical-700) 100%);
+}

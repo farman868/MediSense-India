@@ -1,0 +1,22 @@
+export const COMMON_SYMPTOMS = [
+  "Fever",
+  "Cough",
+  "Shortness of breath",
+  "Fatigue",
+  "Muscle or body aches",
+  "Headache",
+  "New loss of taste or smell",
+  "Sore throat",
+  "Congestion or runny nose",
+  "Nausea or vomiting",
+  "Diarrhea",
+  "Chest pain",
+  "Dizziness",
+  "Abdominal pain",
+  "Back pain",
+  "Joint pain",
+  "Rash",
+  "Itching",
+  "Vision changes",
+  "Numbness or tingling"
+];

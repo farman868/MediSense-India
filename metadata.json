@@ -1,0 +1,5 @@
+{
+  "name": "MediSense AI India - Symptom Checker",
+  "description": "A professional AI-powered symptom checker and triage assistant tailored for the Indian health context. Input your symptoms to receive potential condition matches and guidance on next steps.",
+  "requestFramePermissions": ["geolocation"]
+}
